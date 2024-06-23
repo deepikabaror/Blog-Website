@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 400px;
+            width: 500px;
+            border: 2px solid green;
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 10px;
+
+            justify-content: center;
+        }
+        .box{
+            border: 2px solid blue;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">B1</div>
+        <div class="box">B1</div>
+        <div class="box">B1</div>
+        <div class="box">B1</div>
+        <div class="box">B1</div>
+        <div class="box">B1</div>
+        
+    </div>
+</body>
+</html>

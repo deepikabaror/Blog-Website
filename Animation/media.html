@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 2px solid green;
+            background-color: blue;
+            display: grid;
+            grid-template-rows: 30px 1fr 1fr 30px;
+            grid-template-columns: 1fr;
+            grid-gap: 4px;
+
+            grid-template-areas: 
+            "hd hd"
+            "side main"
+            "ft ft";
+
+        }
+        .box{
+            border: 2px solid purple;
+            background-color: yellow;
+        }
+
+        #header{
+            grid-area: hd;
+        }
+        #footer{
+            grid-area: ft;
+        }
+        #sidebar{
+            grid-area: side;
+        }
+        #content{
+            grid-area: main;
+        }
+
+        @media(max-width:400){
+            .container{
+                grid-gap:100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">
+            <a href="post.html">CLICK HERE TO MOVE BACLWARD</a>
+        </div>
+        <div class="box" id="sidebar">sidebar</div>
+        <div class="box" id="content">content</div>
+        <div class="box" id="footer">footer</div>
+    </div>
+</body>
+</html>
